@@ -6,7 +6,8 @@ const DUMMY_EVENTS = [
       "Everyone can learn to code! Yes, everyone! In this live event, we are going to go through all the key basics and get you started with programming as well.",
     location: "Somestreet 25, 12345 San Somewhereo",
     date: "2021-05-12",
-    image: "images/coding-event.jpg",
+    image:
+      "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
     isFeatured: false,
   },
   {
@@ -16,7 +17,8 @@ const DUMMY_EVENTS = [
       "We know: Networking is no fun if you are an introvert person. That's why we came up with this event - it'll be so much easier. Promised!",
     location: "New Wall Street 5, 98765 New Work",
     date: "2021-05-30",
-    image: "images/introvert-event.jpg",
+    image:
+      "https://images.unsplash.com/photo-1565802526361-b1acaebf0954?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=950&q=80",
     isFeatured: true,
   },
   {
@@ -26,7 +28,8 @@ const DUMMY_EVENTS = [
       "You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.",
     location: "My Street 12, 10115 Broke City",
     date: "2022-04-10",
-    image: "images/extrovert-event.jpg",
+    image:
+      "https://images.unsplash.com/photo-1515169067868-5387ec356754?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     isFeatured: true,
   },
 ];
