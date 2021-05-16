@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AddressIcon from "../icons/address-icon";
 import ArrowRightIcon from "../icons/arrow-right-icon";
 import DateIcon from "../icons/date-icon";
@@ -12,7 +13,13 @@ const EventItems = ({ title, image, date, location, id }) => {
   const formattedLocation = location.replace(",", "\n");
   return (
     <li className={styles.item}>
-      <img className={styles.images} src={image} alt={title} />
+      <Image
+        // className={styles.images}
+        src={image}
+        alt={title}
+        width={440}
+        height={560}
+      />
       <div className={styles.content}>
         <div className={styles.summary}>
           <h2>{title}</h2>

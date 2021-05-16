@@ -1,11 +1,26 @@
-import { useRouter } from "next/router";
+import Head from "next/head";
 import EventList from "../../components/events/EventList";
 import { getFilteredEvents } from "../../helper/api-util";
-const EventFilter = ({ filteredEvents }) => {
+const EventFilter = ({ filteredEvents, dates }) => {
+  const headTag = (
+    <Head>
+      <title>Events List</title>
+      <meta
+        name="description"
+        content={`This a filtered events on date: ${dates.month}/${dates.year}`}
+      />
+    </Head>
+  );
   return filteredEvents.length > 0 ? (
-    <EventList items={filteredEvents} />
+    <>
+      {headTag}
+      <EventList items={filteredEvents} />
+    </>
   ) : (
-    <h1>No Event Available</h1>
+    <>
+      {headTag}
+      <h1>No Event Available</h1>
+    </>
   );
 };
 
@@ -32,6 +47,10 @@ export const getServerSideProps = async (context) => {
   return {
     props: {
       filteredEvents,
+      dates: {
+        year,
+        month,
+      },
     },
   };
 };
